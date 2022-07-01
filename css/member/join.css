@@ -123,6 +123,11 @@ div {
     margin-bottom: 80px;
 }
 
+/* join3 */
+.jota {
+    height: 200px;
+}
+
 @media (min-width: 1280px) {
     .join {
         width: 1200px;
