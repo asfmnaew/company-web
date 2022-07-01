@@ -1,0 +1,262 @@
+/* 초기화 */
+* {
+  margin: 0;
+  padding: 0;
+}
+/* 플로팅버튼 */
+.toTopScroll {
+  position: fixed;
+  z-index: 1;
+  overflow: hidden;
+  right: 5px;
+  bottom: 5px;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+/* 탑메뉴 */
+.topMenu span a {
+  text-decoration: none;
+  color: #5a5a5a;
+}
+.topMenu span a:link {
+  color: #5a5a5a;
+}
+.topMenu span a:hover {
+  color: #5a5a5a;
+}
+.top {
+  width: 100%;
+  height: 30px;
+  color: #777777;
+  font-size: 12px;
+  font-weight: normal;
+  text-align: right;
+  border-bottom: 1px solid #ddd;
+}
+.topMenu {
+  width: 90%;
+  text-align: right;
+  vertical-align: middle;
+  line-height: 30px;
+}
+.topMenu span {
+  padding: 5px;
+}
+/* .topMenu a {
+  margin-bottom: 0;
+  text-decoration: none;
+  color: #777777;
+} */
+.topMenu .home {
+  background-image: url(/img/home01.png);
+  background-repeat: no-repeat;
+  background-position: -10% -50%;
+}
+.home > a {
+  padding: 0 0 0 22px;
+}
+
+/* 네비바의 로그인,회원가입 */
+.ljoin {
+  border-top: 1px solid rgb(202, 202, 202);
+  border-bottom: 1px solid rgb(202, 202, 202);
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.ljoin a {
+  font-size: 12px;
+  color: #555555;
+}
+.ljoin a:hover {
+  text-decoration: none;
+  color: #555555;
+}
+
+/* 네비바의 드롭다운메뉴 */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(17, 14, 14);
+  min-width: 120px;
+  z-index: 1;
+  font-size: 12px;
+  margin-top: -3px;
+  margin-left: 30px;
+}
+.dropdown-content a {
+  display: block;
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  text-align: left;
+  background-color: black;
+}
+.dropdown-content a:link {
+  color: white;
+}
+.dropdown-content a:hover {
+  color: white;
+  text-decoration: underline;
+}
+.dropdown-content a:visited {
+  color: white;
+}
+/* 드롭다운메뉴의 마우스오버시 팝업 */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* 캐러셀 */
+
+/* 섹션2 */
+.row {
+  margin: 50px;
+}
+
+/* 섹션3 */
+.sec3p {
+  position: absolute;
+  z-index: 1;
+  top: 80px;
+  right: 70px;
+  color: white;
+  opacity: 0;
+}
+.sec3p1 {
+  position: absolute;
+  z-index: 1;
+  top: 150px;
+  right: 190px;
+  color: white;
+  opacity: 0;
+}
+.product_img {
+  /* border: 1px solid red; */
+  padding: 5px;
+}
+
+.product_img:hover {
+  background-color: #000
+}
+.product_img:hover img {
+  transition: all
+  .3s ease;
+  opacity: 0.15;
+}
+.product_img:hover .sec3p {
+  opacity: 1;
+  transition: all
+  .3s ease;
+}
+.product_img:hover .sec3p1 {
+  opacity: 1;
+  transition: all
+  .3s ease;
+}
+
+/* 섹션4 */
+.card {
+  overflow:hidden
+}
+.card-title {
+  font-size: 15px;
+}
+.card-text {
+  font-size: 12px;
+}
+.card img {
+  transform: scale(1);
+  transition: all 0.5s ease-in-out;
+  
+}
+.card img:hover {
+  transform: scale(1.1);
+  filter: brightness(70%);
+}
+/* 섹션5 */
+.section5 img {
+  object-fit: cover;
+}
+
+/* 섹션6 */
+.os {
+  color: white;
+  background-color: navy;
+  width: 100%;
+}
+.os-img {
+  height: 50%;
+}
+/* div { border: 1px solid black;} */
+/* footer */
+.footer {
+  background-color: #363636; 
+}
+.footer div {
+  display: block;
+}
+.fa {
+  text-align: center;
+  padding-top: 40px;
+}
+.footer a {
+  /* text-align: center; */
+  margin: 10px;
+  font-size: 13px;
+}
+.footer a:link {
+  color: white;
+}
+.footer a:visited {
+  color: white;
+}
+li {
+  list-style: none;
+} 
+.fp {
+  margin-top: 10px;
+  text-align: center;
+  color: rgb(160, 160, 160);
+  font-size: 14px;
+}  
+.fi {
+  text-align: center;
+  padding: 10px;
+  padding-bottom: 50px;
+}
+.footer img {
+  padding: 0 3px;
+}
+.fa a::after {
+  content: 'l';
+  color: #777;
+  margin-left: 10px;
+  margin-right: -10px;
+  
+}
+.fa a:last-child::after {
+  content: '';
+} 
+/* 테블릿 */
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  
+}
+/* 모바일 */
+@media screen and (max-width: 767px) and (orientation: portrait) {
+  /* product */
+  
+  /* business */
+  
+  /* cs */
+  
+  /* footer */
+  .footer p {
+    font-size: 12px;
+  }
+  .fa a:nth-child(3)::after {
+    content: '';
+  } 
+}

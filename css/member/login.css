@@ -1,0 +1,90 @@
+.lgwrap {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto
+}
+div {
+    display: block;
+}
+.join {
+    text-align: center;
+}
+.lgp1 {
+    box-sizing: border-box;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 28px;
+    line-height : 15px;
+}
+.lgp2 {
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 13px;
+    color: #9b9b9b;
+    line-height : 15px;    
+}
+.lgbox {
+    text-align: center;
+    margin-bottom: 120px;
+    padding: 40px;
+    font-size: 13px;
+    border: 1px solid #dadada;
+    color: #5a5a5a;
+}
+label {
+    font-weight: bold;
+}
+.lgip {
+    width: 30%;
+    height: 19px;
+    margin: 0 10px;
+    border: 1px solid #cecdcd;
+    background-color: #f8f8f8;
+}
+.lgid {
+    position: relative;
+    top: 15px;
+    right: 27.5px;
+}
+.lgsb {
+    width: 65px;
+    height: 45px;
+    position: relative;
+    bottom: 10px;
+    background: linear-gradient(rgb(54, 54, 54), rgb(102, 102, 102));
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.lghelp {  
+    padding: 20px 40px;    
+    font-size: 11px;
+}
+.lghelp a {
+    padding: 2px 8px;
+    border: 1px solid #bbbaba;
+    border-radius: 2px;
+    background-color: #fcfcfc;
+}
+.lghelp a:link {
+    color: black;
+}
+.lghelp a:visited {
+    color: black;
+}
+@media (min-width: 1280px) {
+    .lgwrap {
+        width: 1200px;
+    }
+}
+@media (max-width: 1024px) {
+    .lgp1 {
+        font-size: 24px;
+        margin: 30px 0 0 0
+    }
+    .lgbox {
+        margin-bottom: 60px;
+    }
+}
