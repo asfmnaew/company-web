@@ -1,0 +1,21 @@
+.vis {
+    display: flex;
+    border: 1px solid black;
+}
+.visd1 {
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.viscard {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid blue;
+    width: 20%;
+}
+.viscard img {
+    width: 60%;
+}
