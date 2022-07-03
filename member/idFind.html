@@ -16,7 +16,29 @@
 
 </head>
 <body>
-  
+  <div class="popwrap">
+    <div class="pop">
+        <div class="ph">아이디 찾기</div>   
+        <div class="psd1">아이디를 잊어버리셨나요?<br>
+        회원님의 성명과 이메일을 입력하여 주세요.</div>
+        <div class="pbox">
+          <img src="/img/member/txt_join1.gif" alt="">
+          <input class="popname" type="text" name="name"><br>
+          <img src="/img/member/txt_join3.gif" alt="">
+          <input class="popemail" type="email" name="email">
+        </div>
     
+        <div class="psd2"><button class="popbtn" onclick="location.href='/member/findPop.html'"><img src="/img/member/btn_confirm01.gif"></button></div>
+        <div class="pf"><button class="popbtn" onclick="window.close()"><img src="/img/member/btn_close.gif" alt=""></button></div>
+    </div>
+    
+</div>
+    <script>
+      function popclick() {
+            opener.location.href='/member/join2.html';
+            window.close();
+
+        }
+    </script>
 </body>
 </html>
