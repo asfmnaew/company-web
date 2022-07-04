@@ -1,0 +1,103 @@
+.businessWarp {
+    margin-right: auto;
+    margin-left: auto;
+}
+div {
+    display: block;
+}
+.business {
+    margin: 0 auto;
+    text-align: center;
+}
+.busTit1 {
+    box-sizing: border-box;
+    margin-top: 40px;
+    font-size: 28px;
+    line-height : 15px;
+}
+.busTit2 {
+    margin: 15px 15px 15px 15px;
+    font-size: 13px;
+    color: #9b9b9b;
+    line-height : 15px;    
+}
+.section {
+    display: flex;
+    flex: row nowrap;
+    
+}
+.secImg {
+    flex: 1 70%;
+    padding: 20px;
+}
+.secImg img {
+    width: 640px;
+}
+.secStr {
+    flex: 1 30%;
+    vertical-align: top;
+    padding: 20px;
+}
+.secp1 {
+    text-align: start;
+    font-size: 24px;
+    color: #444444;
+}
+.secp2 {
+    text-align: start;
+    font-size: 16px;
+    color: #777777;
+}
+.margin {
+    margin-bottom: 80px;
+}
+@media (min-width: 1280px) {
+    .business {
+        width: 1200px;
+    }
+    .secImg img {
+        width: 760px;
+    }
+}
+@media (max-width: 1024px) {
+    .busTit1 {
+        font-size: 24px;
+        margin-top: 30px
+    }
+    .head1 {
+        font-size: 19px;
+    }
+    .head2 {
+        text-align: start;
+        font-size: 13px;
+    }
+    .secImg img {
+        width: 100%;
+    }
+    .secp1 {
+        font-size: 20px;
+    }
+    .secp2 {
+        font-size: 13px;
+    }
+    .margin {
+        margin-bottom: 60px;
+    }
+}
+
+/* 모바일 */
+@media screen and (max-width: 767px) and (orientation: portrait) {
+    .section {
+        flex-flow: row wrap;
+    }
+    .secImg {
+        flex: 1 100%;
+    }
+    .secStr {
+        flex: 1 100%;
+    }
+    .margin {
+        margin-bottom: 20px;
+    }
+    
+}   
