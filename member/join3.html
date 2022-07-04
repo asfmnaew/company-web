@@ -50,7 +50,7 @@
 
   <!-- 메인 -->
   <!-- 회원가입 -->
-  <div class="jowarp">
+  <div class="joinwarp">
     <div class="join">
       <div class="jop1"><p>회원가입</p></div>
       <div class="jop2"><p>The design and maintenance are excellent.</p></div>
@@ -62,40 +62,39 @@
         <div class="jbd3">회원가입을 위해서 아래의 양식에 있는 내용을 입력해 주셔야 합니다.</div>
         <div class="jbd2">-회원님의 개인정보를 신중하게 보호하고 있으며 회원님의 동의 없이는 기재하신 회원정보가 누출되지 않습니다. 자세한 내용은 개인정보보호정책에서 확인하세요.</div>
       </div>
-      <div class="joininfo">
-        <div>기본정보</div>
+        <div class="joinInfo1">기본정보</div>
         <form action="">
             <table class="table-bordered jointable">
                 <tr class="jointr">
-                    <td>아이디</td>
-                    <td><input type="text" name="id">
-                      <button><img src="/img/member/btn_iddupl.gif"></button>
+                    <td class="tableData1">아이디</td>
+                    <td class="tableData2"><input type="text" name="id">
+                      <button class="jobtn3"><img src="/img/member/btn_iddupl.gif"></button>
                       (영문 소문자, 숫자4~16자)</td>
                 </tr>
                 <tr class="jointr">
-                    <td>비밀번호</td>
-                    <td><input type="password" name="pw">
+                    <td class="tableData1">비밀번호</td>
+                    <td class="tableData2"><input type="password" name="pw">
                       영문/숫자/특수문자('~!@^*()-_+[]{}\:,.<>/) 조합으로 8~16자리. 첫글자는 영문자로 사용</td>
                 </tr>
                 <tr class="jointr">
-                    <td>비밀번호 확인</td>
-                    <td><input type="password" name="pwcheck"></td>
+                    <td class="tableData1">비밀번호 확인</td>
+                    <td class="tableData2"><input type="password" name="pwcheck"></td>
                 </tr>
                 <tr class="jointr">
-                    <td>이름</td>
-                    <td><input type="text" name="name"></td>
+                    <td class="tableData1">이름</td>
+                    <td class="tableData2"><input class="redonly" type="text" name="name" readonly></td>
                 </tr>
                 <tr class="jointr">
-                    <td>이메일</td>
-                    <td><input type="text"> @ <input type="text"></td>
+                    <td class="tableData1">이메일</td>
+                    <td class="tableData2"><input class="redonly" type="text" name="email" readonly> @ <input class="redonly" type="text" readonly></td>
                 </tr>
                 <tr class="jointr">
-                    <td>이메일 수신여부</td>
-                    <td><input type="radio">수신<input type="radio">수신안함</td>
+                    <td class="tableData1">이메일 수신여부</td>
+                    <td class="tableData2"><input type="radio">수신<input type="radio">수신안함</td>
                 </tr>
                 <tr class="jointr">
-                    <td>비밀번호 확인시 질문</td>
-                    <td><select name="" id="">
+                    <td class="tableData1">비밀번호 확인시 질문</td>
+                    <td class="tableData2"><select name="" id="">
                       <option value="0">========선택========</option>
                       <option value="1">기억에 남는 추억의 장소는?</option>
                       <option value="2">자신의 인생 좌우명은?</option>
@@ -116,20 +115,23 @@
                     </select></td>
                 </tr>
                 <tr class="jointr">
-                    <td>비밀번호 확인시 답변</td>
-                    <td><input type="text"></td>
+                    <td class="tableData1">비밀번호 확인시 답변</td>
+                    <td class="tableData2"><input type="text"></td>
                 </tr>
                 <tr class="jointr">
-                    <td>성별</td>
-                    <td><input type="radio">남자<input type="radio">여자</td>
+                    <td class="tableData1">성별</td>
+                    <td class="tableData2"><input type="radio">남자<input type="radio">여자</td>
                 </tr>
                 <tr class="jointr">
-                    <td>생년월일</td>
-                    <td></td>
+                    <td class="tableData1">생년월일</td>
+                    <td class="tableData2"><input type="date" name="birthday"></td>
                 </tr>
               </table>
         </form>
-      </div>
+        <div class="joinInfo2">부가정보</div>
+        <div class="infobtn"><button class="jobtn3"><img src="/img/member/btn_confirm.gif"></button>
+          <button class="jobtn3"><img src="/img/member/btn_cancel.gif"></button></div>
+      <!-- </div> -->
     </div>
   </div> 
     

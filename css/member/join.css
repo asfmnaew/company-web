@@ -105,6 +105,7 @@ div {
 }
 .popbtn {
     border: none;
+    background-color: transparent;
 }
 /* join 2 */
 .jocheck {
@@ -121,6 +122,7 @@ div {
     text-align: center;
     border: none;
     margin-bottom: 80px;
+    background-color: transparent;
 }
 
 /* join3 */
@@ -130,14 +132,41 @@ div {
     padding: 20px 10px;
     background-color: #ebebeb;
 }
-.joininfo {
-    /* text-align: center; */
+.joinInfo1 {
+    text-align: start;
+    margin: 0 20px;
 }
 .jointable {
+    width: 95%;
+    margin: auto;
+    margin-bottom: 20px;
     font-size: 12px;
 }
 .jointr {
     height: 30px;
+}
+.tableData1 {
+    background-color: rgb(248, 248, 248);
+}
+.tableData2 {
+    text-align: start;
+    padding-left: 10px;
+}
+.jobtn3 {
+    border: none;
+}
+.redonly {
+    background-color: rgb(248, 248, 248);
+    border: 1px solid #dadada;
+}
+.joinInfo2 {
+    text-align: start;
+    margin: 0 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ebebeb;
+}
+.infobtn {
+    margin-bottom: 100px;
 }
 
 @media (min-width: 1280px) {
@@ -161,5 +190,8 @@ div {
     }
     .jobtn2 {
         margin-bottom: 40px;
+    }
+    .infobtn {
+        margin-bottom: 60px;
     }
 }
