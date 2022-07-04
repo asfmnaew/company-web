@@ -62,17 +62,8 @@ label {
     padding: 20px 40px;    
     font-size: 11px;
 }
-.lghelp a {
-    padding: 2px 8px;
-    border: 1px solid #bbbaba;
-    border-radius: 2px;
-    background-color: #fcfcfc;
-}
-.lghelp a:link {
-    color: black;
-}
-.lghelp a:visited {
-    color: black;
+.lgHelpBtn {
+    border: none;
 }
 @media (min-width: 1280px) {
     .lgwrap {

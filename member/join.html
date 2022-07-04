@@ -64,7 +64,7 @@
       <span class="name"><input class="joip" type="text" name="name"><br></span>
       <img class="jbi" src="/img/member/img_email.gif"><br>
       <input class="joip" type="text" name="email" id="email">
-      <button onclick="window.open('/member/join_pop.html')" class="jobt"><img src="/img/member/btn_confirm01.gif"></button>
+      <button onclick="javascript:GoToEnroll()" class="jobt"><img src="/img/member/btn_confirm01.gif"></button>
       
     </div>
     </div>
@@ -77,6 +77,32 @@
   <div id="footer"></div>
 
   <script>
+    function CheckEmail(str) {
+      var reg_email = /^([0-9a-zA-Z_\.-]+)@([0-9a-zA-Z_-]+)(\.[0-9a-zA-Z_-]+){1,2}$/;
+      if(!reg_email.test(str)){
+        return false;
+      } else {
+        return true;
+      }
+    }
+
+    function GoToEnroll() {
+	    var obEmail = document.getElementById("email");
+      if (!obEmail.value) {
+        alert("이메일을 입력하세요!");
+        obEmail.focus();	
+        return;
+      }
+      else {
+        if(!CheckEmail(obEmail.value))	{
+          alert("이메일 형식이 잘못되었습니다");
+          obEmail.focus();
+          return;
+        }
+      }
+      window.open('/member/join_pop.html')        
+    }
+
   </script>
 </body>
 </html>
