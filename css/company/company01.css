@@ -1,21 +1,245 @@
-.vis {
-    display: flex;
-    border: 1px solid black;
+.companyWrap {
+    margin-right: auto;
+    margin-left: auto;
 }
-.visd1 {
-    border: 1px solid red;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
+div {
+    display: block;
 }
-.viscard {
-    margin: 10px;
-    padding: 10px;
+.company {
+    margin: 0 auto;
     text-align: center;
-    border: 1px solid blue;
-    width: 20%;
 }
-.viscard img {
-    width: 60%;
+.comTit1 {
+    box-sizing: border-box;
+    margin-top: 40px;
+    font-size: 28px;
+    line-height : 15px;
+}
+.comTit2 {
+    margin: 15px;
+    font-size: 13px;
+    color: #9b9b9b;
+    line-height : 15px;    
+}
+.comHeader {
+    margin: 0 auto;
+    padding: 15px;
+    width: 990px;
+}
+.head1 {
+    margin-top: 40px;
+    font-size: 28px;
+}
+.head2 {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #777777;
+}
+.comHeader img {
+    margin: 20px;
+}
+
+/* 섹션1 */
+.comSection1 {
+    margin: 20px 0;
+    color: #777777;
+    background-color: rgb(247, 247, 247);
+    font-size: 16px;
+}
+.section1Div {
+    display: flex;
+    flex-flow: row wrap;
+    margin: auto;
+    padding: 60px 10px;
+}
+.section1Img {
+   flex: 1 45%;
+   padding: 20px; 
+}
+.section1Img img {
+    width: 470px;
+}
+.section1Str {
+    flex: 1 45%;
+    padding: 20px;
+    width: 500px;
+    text-align: start;
+}
+.secp1 {
+    color: #444444;
+    font-size: 30px;
+}
+.secp3 {
+    padding-left: 20px;
+}
+.strRed {
+    color: #E01D31;
+}
+
+/* 섹션2 */
+.comSection2 {
+    width: 920px;
+    margin: auto;
+    color: #777777;
+}
+.section2Div {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 10px;   
+    border-bottom: 1px solid #cecdcd;
+}
+.section {
+    flex: 1;
+    margin: 10px;
+    padding: 50px 10px 30px;
+    width: 205px;
+    border: 1px solid #cecdcd;
+    background-color: rgb(247, 247, 247);
+}
+.cardTitle {
+    margin-top: 15px;
+    color: #333333;
+    font-size: 17px;
+    font-weight: 500;
+}
+.card-text {
+    font-size: 14px;
+}
+
+/* 섹션3 */
+.comSection3 {
+    margin-bottom: 50px;
+    padding: 15px;
+    font-size: 15px;
+}
+.history {
+    width: 900px;
+    margin: auto;
+    text-align: start;
+    color: #777777;
+    border-bottom: 1px dotted #777777;
+}
+.history:nth-of-type(3) {
+    border: none;
+}
+.header1 {
+    display: none;
+    color: #333333;
+    font-weight: bold;
+}
+.header2 {
+    color: #333333;
+    font-size: 34px;
+    font-weight: bold;
+}
+.data {
+    position: relative;
+    bottom: 35px;
+    left: 100px;
+}
+.data1 {
+    padding-right: 10px;
+}
+
+
+@media (min-width: 1280px) {
+    .comHeader {
+        width: 1200px;
+    }
+
+    .section1Div {
+        width: 1200px;
+    }
+    .section1Img img {
+        width: 560px;
+    }
+    .section1Str {
+        width: 600px;
+    }
+
+    .comSection2 {
+        width: 1020px;
+    }
+    .section {
+        width: 230px;
+    }
+  }
+
+@media (max-width: 1024px) {
+    .comTit1 {
+      font-size: 24px;
+    }
+    .comHeader {
+        width: 100%;
+    }
+    .head1 {
+        font-size: 19px;
+    }
+    .head2 {
+        text-align: start;
+        font-size: 13px;
+    }
+    .comSection1 {
+        font-size: 13px;
+    }
+    .section1Img img {
+        width: 100%;
+    }
+    .secp1 {
+        font-size: 20px;
+    }
+
+    .comSection2 {
+        width: 100%;
+    }
+    .section {
+        flex: 1 22%;
+    }
+    .cardTitle {
+        font-size: 15px;
+    }
+    .card-text {
+        font-size: 12px;
+    }
+
+    .history {
+        width: 100%;
+        font-size: 13px;
+    }
+    .header1 {
+        display: block;
+        font-size: 24px;
+        padding: 10px;
+    }
+    .header2 {
+        display: none;
+    }
+    .data p {
+        position: relative;
+        top: 5px;
+        right: 75px;
+    }
+    .data1 {
+        padding-right: 30px;
+    }
+    
+    
+  }
+
+  /* 모바일 */
+@media screen and (max-width: 767px) and (orientation: portrait) {
+    .section1Div {
+        padding: 30px 10px;
+    }
+    .section1Img {
+        flex: 1 100%; 
+    }
+     .section1Str {
+        flex: 1 100%;
+    }
+    
+    
+    .section {
+        flex: 1 46%;
+    }
 }

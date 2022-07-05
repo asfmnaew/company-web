@@ -1,5 +1,32 @@
+.companyWrap {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+div {
+  display: block;
+}
+.company {
+  margin: 0 auto;
+  text-align: center;
+}
+.comTit1 {
+  box-sizing: border-box;
+  margin-top: 40px;
+  font-size: 28px;
+  line-height : 15px;
+}
+.comTit2 {
+  margin: 15px;
+  font-size: 13px;
+  color: #9b9b9b;
+  line-height : 15px;    
+}
+
+/* 지도 */
 .companyMapTitle {
-  padding-top: 20px;
+  padding: 20px;
 }
 .companyMapTitle p {
   color: rgb(174, 174, 174);
@@ -41,4 +68,38 @@
 }
 .companyMapContent td {
   padding-left: 10px;
+}
+/* 지도 끝 */
+.comTable {
+  margin-bottom: 80px;
+  border-top: 3px solid rgb(100, 100, 100);
+  color: #777777;
+  font-size: 15px;
+}
+.table {
+  border-bottom: 1px solid #dee2e6;
+}
+.tableData1 {
+  width: 30%;
+  color: #555555;
+  background-color: rgb(247, 247, 247);
+  font-weight: bold;
+}
+.tableData2 {
+  text-align: start;
+  border-left: 1px solid #dee2e6;
+}
+@media (min-width: 1280px) {
+  .company {
+      width: 1200px;
+  } 
+}
+@media (max-width: 1024px) {
+  .comTit1 {
+    font-size: 24px;
+  }
+  .comTable {
+    margin-bottom: 40px;
+    font-size: 13px;
+  }
 }

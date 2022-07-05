@@ -1,4 +1,4 @@
-.businessWarp {
+.businessWrap {
     margin-right: auto;
     margin-left: auto;
 }
@@ -63,13 +63,6 @@ div {
     .busTit1 {
         font-size: 24px;
         margin-top: 30px
-    }
-    .head1 {
-        font-size: 19px;
-    }
-    .head2 {
-        text-align: start;
-        font-size: 13px;
     }
     .secImg img {
         width: 100%;
