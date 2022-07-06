@@ -1,31 +1,6 @@
-.companyWrap {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
-div {
-    display: block;
-}
-.company {
-    margin: 0 auto;
-    text-align: center;
-}
-.comTit1 {
-    box-sizing: border-box;
-    margin-top: 40px;
-    font-size: 28px;
-    line-height : 15px;
-}
-.comTit2 {
-    margin: 15px;
-    font-size: 13px;
-    color: #9b9b9b;
-    line-height : 15px;    
-}
 .comSection {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
 }
 .comImg {
     flex: 1 50%;
@@ -73,6 +48,10 @@ div {
     }
 }
 @media screen and (max-width: 767px)  {
+    .comSection {
+        display: flex;
+        flex-flow: row wrap;
+    }
     .comImg {
         flex: 1 100%;
     }
