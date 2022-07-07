@@ -1,0 +1,59 @@
+.qna {
+    width: 1020px;
+    margin: 30px auto 10px auto;
+  }
+.qna table {
+width: 100%;
+height: auto;
+border-top: 2px solid black;
+font-size: 14px;
+}
+.qna tr {
+border-bottom: 1px solid rgb(224, 223, 223);
+height: 50px;
+}
+.qna td {
+color: #8b8b8b;
+}
+.qna td:nth-child(2) {
+text-align: left;
+padding-left: 20px;
+}
+.qna th {
+width: 20%;
+background-color: rgb(236, 236, 236);
+color: #777;
+}
+
+.qna select {
+font-size: 12px;
+}
+.qna input {
+width: 600px;
+height: 30px;
+border: 1px solid rgb(218, 218, 218);
+}
+.qna textarea {
+width: 600px;
+height: 250px;
+margin: 5px 0;
+border: 1px solid rgb(218, 218, 218);
+}
+
+.Confirm {
+margin-bottom: 80px;
+}
+button {
+padding: 5px;
+background-color: transparent;
+border: none;
+}
+
+@media (max-width: 1024px) {
+.qna {
+    width: 100%;
+}
+.Confirm {
+    margin-bottom: 40px;
+}
+}

@@ -61,7 +61,7 @@
     </div>
     <div class="jobox2">
       <img class="jbi" src="/img/member/img_name.gif"><br>
-      <span class="name"><input class="joip" type="text" name="name"><br></span>
+      <span class="name"><input class="joip" type="text" name="name" id="name"><br></span>
       <img class="jbi" src="/img/member/img_email.gif"><br>
       <input class="joip" type="text" name="email" id="email">
       <button onclick="javascript:GoToEnroll()" class="jobt"><img src="/img/member/btn_confirm01.gif"></button>
@@ -87,21 +87,35 @@
     }
 
     function GoToEnroll() {
-	    var obEmail = document.getElementById("email");
-      if (!obEmail.value) {
-        alert("이메일을 입력하세요!");
+      var obName = document.getElementById("name").value;
+      var obEmail = document.getElementById("email");
+      if( obName.length < 2 || isEmpty(obName) ) {
+          alert("이름을 다시 확인해주세요.");
+          document.getElementById('name').focus();
+          return false;
+        } else if (!obEmail.value) {
+        alert("이메일을 입력하세요.");
         obEmail.focus();	
         return;
-      }
-      else {
-        if(!CheckEmail(obEmail.value))	{
-          alert("이메일 형식이 잘못되었습니다");
-          obEmail.focus();
-          return;
         }
-      }
-      window.open('/member/join_pop.html')        
+        else {
+          if(!CheckEmail(obEmail.value))	{
+            alert("이메일 형식이 잘못되었습니다.");
+            obEmail.focus();
+            return;
+          }
+        }
+        window.open('/member/join_pop.html');        
     }
+    var isEmpty = function(value){
+      if( value == "" || value == null || value == undefined 
+          || ( value != null && typeof value == "object" &&
+                !Object.keys(value).length ) ){    
+        return true;
+      }else{
+        return false;
+      }
+    };
 
   </script>
 </body>
