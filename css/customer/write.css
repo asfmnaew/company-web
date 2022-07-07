@@ -62,18 +62,3 @@ input[type="text"] {
 .btnImg button {
   border: none;
 }
-/* .btnImg table td:nth-child(1) {
-  width: 20%;
-  text-align: left;
-}
-.btnImg table td:nth-child(2) img {
-  text-align: center;
-  padding-right: 10px;
-}
-.btnImg table td:nth-child(2) {
-  width: 60%;
-  text-align: center;
-}
-.btnImg table td:nth-child(3) {
-  width: 20%;
-} */

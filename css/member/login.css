@@ -1,46 +1,46 @@
 .loginBox {
-    text-align: center;
-    margin-bottom: 120px;
-    padding: 40px;
-    font-size: 13px;
-    border: 1px solid #dadada;
-    color: #5a5a5a;
+  text-align: center;
+  margin-bottom: 120px;
+  padding: 40px;
+  font-size: 13px;
+  border: 1px solid #dadada;
+  color: #5a5a5a;
 }
 label {
-    font-weight: bold;
+  font-weight: bold;
 }
 .loginInput {
-    width: 30%;
-    height: 19px;
-    margin: 0 10px;
-    border: 1px solid #cecdcd;
-    background-color: #f8f8f8;
+  width: 30%;
+  height: 19px;
+  margin: 0 10px;
+  border: 1px solid #cecdcd;
+  background-color: #f8f8f8;
 }
 .loginId {
-    position: relative;
-    top: 15px;
-    right: 27.5px;
+  position: relative;
+  top: 15px;
+  right: 27.5px;
 }
 .loginSubmit {
-    width: 65px;
-    height: 45px;
-    position: relative;
-    bottom: 10px;
-    background: linear-gradient(rgb(54, 54, 54), rgb(102, 102, 102));
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
+  width: 65px;
+  height: 45px;
+  position: relative;
+  bottom: 10px;
+  background: linear-gradient(rgb(54, 54, 54), rgb(102, 102, 102));
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
 }
 .loginHelp {  
-    padding: 20px 40px;    
-    font-size: 11px;
+  padding: 20px 40px;    
+  font-size: 11px;
 }
 .loginHelpBtn {
-    border: none;
+  border: none;
 }
 @media (max-width: 1024px) {
-    .loginBox {
-        margin-bottom: 60px;
-    }
+  .loginBox {
+      margin-bottom: 60px;
+  }
 }
