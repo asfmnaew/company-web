@@ -1,29 +1,3 @@
-.companyWrap {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-div {
-  display: block;
-}
-.company {
-  margin: 0 auto;
-  text-align: center;
-}
-.comTit1 {
-  box-sizing: border-box;
-  margin-top: 40px;
-  font-size: 28px;
-  line-height : 15px;
-}
-.comTit2 {
-  margin: 15px;
-  font-size: 13px;
-  color: #9b9b9b;
-  line-height : 15px;    
-}
-
 /* 지도 */
 .companyMapTitle {
   padding: 20px;

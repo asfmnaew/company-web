@@ -7,7 +7,7 @@
   <title>비밀번호 확인</title>
 
   <!-- My CSS -->
-  <link rel="stylesheet" href="/css/customer/checkPW.css">
+  <link rel="stylesheet" href="../css/customer/checkPW.css">
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
@@ -22,18 +22,15 @@
         <table>
           <tr><td>비밀번호입력</td></tr>
           <tr><td>글 작성시 입력한 비밀번호를 입력하세요.</td></tr>
-          <tr><td><img src="/img/customer/txt_pass.gif">
+          <tr><td><img src="../img/customer/txt_pass.gif">
           <input type="password" id="password"></td></tr>
         </table>
-        <div class="ps2"><button class="popBtn" onclick="popclick()"><img src="/img/customer/btn_confirm.gif"></button></div>
-        <div class="pf"><button class="popBtn" onclick="window.close()"><img src="/img/member/btn_close.gif" alt=""></button></div>
+        <div class="ps2"><button class="popBtn" onclick="popclick()"><img src="../img/customer/btn_confirm.gif"></button></div>
+        <div class="pf"><button class="popBtn" onclick="window.close()"><img src="../img/member/btn_close.gif" alt=""></button></div>
     </div>
     
 </div>
 <script>
-  //   function popclick() {
-  //       alert('비밀번호가 올바르지 않습니다.');
-  // }
   function popclick() {
 	    var obPassword = document.getElementById("password");
       if (!obPassword.value) {

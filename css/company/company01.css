@@ -9,18 +9,6 @@ div {
     margin: 0 auto;
     text-align: center;
 }
-.comTit1 {
-    box-sizing: border-box;
-    margin-top: 40px;
-    font-size: 28px;
-    line-height : 15px;
-}
-.comTit2 {
-    margin: 15px;
-    font-size: 13px;
-    color: #9b9b9b;
-    line-height : 15px;    
-}
 .comHeader {
     margin: 0 auto;
     padding: 15px;

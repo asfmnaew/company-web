@@ -2,29 +2,9 @@
     margin-right: auto;
     margin-left: auto;
 }
-div {
-    display: block;
-}
-.business {
-    margin: 0 auto;
-    text-align: center;
-}
-.busTit1 {
-    box-sizing: border-box;
-    margin-top: 40px;
-    font-size: 28px;
-    line-height : 15px;
-}
-.busTit2 {
-    margin: 15px 15px 15px 15px;
-    font-size: 13px;
-    color: #9b9b9b;
-    line-height : 15px;    
-}
 .section {
     display: flex;
-    flex: row nowrap;
-    
+    flex: row nowrap;    
 }
 .secImg {
     flex: 1 70%;
@@ -52,18 +32,11 @@ div {
     margin-bottom: 80px;
 }
 @media (min-width: 1280px) {
-    .business {
-        width: 1200px;
-    }
     .secImg img {
         width: 760px;
     }
 }
 @media (max-width: 1024px) {
-    .busTit1 {
-        font-size: 24px;
-        margin-top: 30px
-    }
     .secImg img {
         width: 100%;
     }

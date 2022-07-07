@@ -1,0 +1,110 @@
+.qna {
+    width: 1020px;
+    margin: 30px auto;
+  }
+  .qna table {
+    width: 100%;
+    height: auto;
+    border-top: 2px solid black;
+    font-size: 14px;
+  }
+  .qna tr {
+    border-bottom: 1px solid rgb(224, 223, 223);
+    height: 50px;
+  }
+  .qna th {
+    color: #555555;
+    background-color: rgb(236, 236, 236);
+  }
+  .qna td {
+    color: #8b8b8b;
+    cursor: pointer;
+    text-align: left;
+    padding-left: 20px;
+  }
+  .qna td:hover {
+    color: #333333;
+  }
+  
+  /* search bar */
+  .search {
+    width: 1020px;
+    margin: auto;
+    padding-bottom: 50px;
+  }
+  .search select {
+    height: 25px;
+    color: #8b8b8b;
+    border: 1px solid #8b8b8b;
+    font-size: 13px;
+  }
+  .search input[type="text"] {
+    height: 25px;
+    border: 1px solid #8b8b8b;
+  }
+  .search input[type="image"] {
+    border: 1px solid #8b8b8b;
+    width: 26px;
+  }
+  .search td {
+    padding-left: 3px;
+  }
+  .search td:nth-child(3) {
+    padding-top: 5px;
+  }
+  
+  /* 공지사항 상세 */
+  .qnaContent {
+    width: 1020px;
+    margin: auto;
+    margin-top: 30px;
+    border-top: 2px solid black;
+  }
+  .qnaContent table {
+    width: 100%;
+    font-size: 14px;
+  }
+  .qnaContent tr {
+    border-bottom: 1px solid rgb(207, 207, 207);
+    height: 50px;
+  }
+  .qnaContent th {
+    background-color: rgb(241, 241, 241);
+    width: 20%;
+  }
+  .qnaContent td {
+    text-align: left;
+    padding: 10px 0 30px 5px;
+    color: #777;
+  }
+  .list {
+    text-align: start;
+    width: 1020px;
+    margin: auto;
+  }
+  button {
+    padding: 10px 15px 100px;
+    background-color: transparent;
+    border: none;
+  }
+  
+  @media (max-width: 1024px) {
+    .qna {
+      width: 100%;
+    }
+    .qna table {
+      font-size: 13px;
+    }
+    .qnaContent {
+      width: 100%;
+    }
+    .qnaContent table {
+      font-size: 13px;
+    }
+    button {
+      margin-bottom: 60px;
+    }
+    .list {
+      width: 100%;
+    }
+  }
